@@ -17,7 +17,7 @@
     transition: all 100ms;
 }
 .flex-element:hover {
+    margin: 0;
     border-color: white;
-    box-shadow: -5px 5px 10px black;
-    box-shadow: 5px -5px 10px white;
+    box-shadow: -5px 5px 10px black, 5px -5px 10px white;
 }
