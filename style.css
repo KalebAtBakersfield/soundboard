@@ -5,6 +5,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 .flex-container {
+    visibility: hidden;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
