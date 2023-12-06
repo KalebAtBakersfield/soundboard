@@ -13,7 +13,7 @@
 </div>
 <div id="password">
     <textarea name="passwordInput" id="passwordInput" cols="30" rows="1"></textarea>
-    <button id="submitButton" onclick="passCheck">Submit</button>
+    <button id="submitButton">Submit</button>
 </div>
 <div class="flex-container">
     <div class="flex-element">
@@ -74,10 +74,10 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.3.2</p>
+    <p>Version 0.3.3</p>
 </body>
 <script>
-    function passCheck(){
+    document.getElementById("submitButton").onclick = function(){
         if(document.getElementById("passwordInput")="1234"){
             document.getElementById("flex-container").style.visibility = visible
         }
