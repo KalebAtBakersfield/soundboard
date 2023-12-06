@@ -12,7 +12,7 @@
     Please do not use the sounds when not apropriate(Tyson). I will turn the SoundBoard off.
 </div>
 <div id="password">
-    <textarea name="passwordInput" id="passwordInput" cols="30" rows="1"></textarea>
+    <textarea name="passwordInput" id="passwordInput" cols="30" rows="1">Password goes here</textarea>
     <button id="submitButton">Submit</button>
 </div>
 <div class="flex-container">
@@ -74,12 +74,14 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.3.4</p>
+    <p>Version 0.3.5</p>
 </body>
 <script>
     document.getElementById("submitButton").onclick = function(){
         if(document.getElementById("passwordInput").innerHTML === "1234"){
             document.getElementById("flex-container").style.visibility = "visible"
+        }else{
+            document.getElementById("passwordInput").innerHTML = "That was the wrong password. Try again, I dare you."
         }
     }
 </script>
