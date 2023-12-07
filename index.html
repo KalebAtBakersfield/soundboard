@@ -14,16 +14,16 @@
 <div id="password">
     <textarea name="passwordInput" id="passwordInput" cols="30" rows="1">Password goes here</textarea>
     <button id="submitButton" onclick="
-    password = '1234'
     attempt = document.getElementById('passwordInput')
-    if(attempt.value == '1234'){
+    if(attempt.value = 'cheese-gun'){
         attempt.value = 'Correct!'
+        document.getElementById('sounds').style.visibility = 'visible'
     }else{
         attempt.value = 'Incorrect'
     }
     ">Submit</button>
 </div>
-<div class="flex-container">
+<div class="flex-container" id="sounds">
     <div class="flex-element">
         <p>Vine Boom</p>
         <audio controls>
@@ -82,7 +82,7 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.3.9</p>
+    <p>Version 0.3.10</p>
 </body>
 <!-- <script>
     document.getElementById("submitButton").onclick = function(){
