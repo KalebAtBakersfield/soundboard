@@ -16,10 +16,10 @@
     <button id="submitButton" onclick="
     password = '1234'
     attempt = document.getElementById('passwordInput')
-    if(attempt.innerHTML == '1234'){
-        attempt.innerHTML = 'cheese'
+    if(attempt.value == '1234'){
+        attempt.value = 'Correct!'
     }else{
-        attempt.innerHTML = 'WRONG GUESS YOU NITWIT'
+        attempt.value = 'Incorrect'
     }
     ">Submit</button>
 </div>
@@ -82,7 +82,7 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.3.8</p>
+    <p>Version 0.3.9</p>
 </body>
 <!-- <script>
     document.getElementById("submitButton").onclick = function(){
