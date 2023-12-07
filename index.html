@@ -9,13 +9,13 @@
     <h1>SoundBoard</h1>
 <div class="description">
     <h2>Warning</h2>
-    Please do not use the sounds when not apropriate(Tyson). I will turn the SoundBoard off.
+    Do NOT abuse the sound board.
 </div>
 <div id="password">
-    <textarea name="passwordInput" id="passwordInput" cols="30" rows="1">Password goes here</textarea>
+    <textarea name="passwordInput" id="passwordInput" cols="30" rows="1">Password goes here</textarea><br>
     <button id="submitButton" onclick="
     attempt = document.getElementById('passwordInput')
-    if(attempt.value == 'cheese-gun'){
+    if(attempt.value == 'qwertyuiop'){
         attempt.value = 'Correct!'
         document.getElementById('sounds').style.visibility = 'visible'
     }else{
@@ -83,6 +83,6 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.3.11</p>
+    <p>Version 0.4</p>
 </body>
 </html>
