@@ -15,11 +15,12 @@
     <textarea name="passwordInput" id="passwordInput" cols="30" rows="1">Password goes here</textarea>
     <button id="submitButton" onclick="
     attempt = document.getElementById('passwordInput')
-    if(attempt.value = 'cheese-gun'){
+    if(attempt.value == 'cheese-gun'){
         attempt.value = 'Correct!'
         document.getElementById('sounds').style.visibility = 'visible'
     }else{
         attempt.value = 'Incorrect'
+        document.getElementById('sounds').style.visibility = 'hidden'
     }
     ">Submit</button>
 </div>
@@ -82,15 +83,6 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.3.10</p>
+    <p>Version 0.3.11</p>
 </body>
-<!-- <script>
-    document.getElementById("submitButton").onclick = function(){
-        if(document.getElementById("passwordInput").innerHTML === "1234"){
-            document.getElementById("flex-container").style.visibility = "visible"
-        }else{
-            document.getElementById("passwordInput").innerHTML = "That was the wrong password. Try again, I dare you."
-        }
-    }
-</script> -->
 </html>
