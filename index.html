@@ -13,7 +13,7 @@
 </div>
 <div id="password">
     <textarea name="passwordInput" id="passwordInput" cols="30" rows="1">Password goes here</textarea>
-    <button id="submitButton">Submit</button>
+    <button id="submitButton" onclick="document.getElementById('passwordInput').innerHTML = 'It seems you might have clicked the input button.'">Submit</button>
 </div>
 <div class="flex-container">
     <div class="flex-element">
@@ -74,9 +74,9 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.3.5</p>
+    <p>Version 0.3.6</p>
 </body>
-<script>
+<!-- <script>
     document.getElementById("submitButton").onclick = function(){
         if(document.getElementById("passwordInput").innerHTML === "1234"){
             document.getElementById("flex-container").style.visibility = "visible"
@@ -84,5 +84,5 @@
             document.getElementById("passwordInput").innerHTML = "That was the wrong password. Try again, I dare you."
         }
     }
-</script>
+</script> -->
 </html>
