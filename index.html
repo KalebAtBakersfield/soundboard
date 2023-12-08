@@ -17,7 +17,6 @@
     attempt = document.getElementById('passwordInput')
     sounds = document.getElementById('sounds')
     password = document.getElementById('password')
-    attempt.value = ''
     if(attempt.value == 'qwertyuiop'){
         sounds.style.visibility = 'visible'
         password.style.visibility = 'hidden'
@@ -27,6 +26,7 @@
         password.style.visibility = 'visible'
         window.alert('Incorrect!')
     }
+    attempt.value = ''
     ">Submit</button>
 </div>
 <div class="flex-container" id="sounds">
@@ -88,6 +88,6 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.4.6</p>
+    <p>Version 0.4.7</p>
 </body>
 </html>
