@@ -16,11 +16,14 @@
     <button id="submitButton" onclick="
     attempt = document.getElementById('passwordInput')
     if(attempt.value == 'qwertyuiop'){
-        attempt.value = 'Correct!'
         document.getElementById('sounds').style.visibility = 'visible'
+        document.getElementById('password').style.visibility = 'hidden'
+        window.alert('Correct!')
     }else{
-        attempt.value = 'Incorrect'
+        document.getElementById('password').value = ''
+        window.alert('Incorrect!')
         document.getElementById('sounds').style.visibility = 'hidden'
+        document.getElementById('password').style.visibility = 'visible'
     }
     ">Submit</button>
 </div>
@@ -83,6 +86,6 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.4.3</p>
+    <p>Version 0.4.4</p>
 </body>
 </html>
