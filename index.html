@@ -15,15 +15,16 @@
     <textarea name="passwordInput" id="passwordInput" cols="30" rows="1">Password goes here</textarea><br>
     <button id="submitButton" onclick="
     attempt = document.getElementById('passwordInput')
+    sounds = document.getElementById('sounds')
+    password = document.getElementById('password')
+    attempt.value = ''
     if(attempt.value == 'qwertyuiop'){
-        attempt.value = ''
-        document.getElementById('sounds').style.visibility = 'visible'
-        document.getElementById('password').style.visibility = 'hidden'
+        sounds.style.visibility = 'visible'
+        password.style.visibility = 'hidden'
         window.alert('Correct!')
     }else{
-        attempt.value = ''
-        document.getElementById('sounds').style.visibility = 'hidden'
-        document.getElementById('password').style.visibility = 'visible'
+        sounds.style.visibility = 'hidden'
+        password.style.visibility = 'visible'
         window.alert('Incorrect!')
     }
     ">Submit</button>
@@ -87,6 +88,6 @@
         </audio>
     </div>
 </div>
-    <p>Version 0.4.5</p>
+    <p>Version 0.4.6</p>
 </body>
 </html>
